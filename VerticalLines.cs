@@ -2,12 +2,12 @@
 
 namespace ConsoleApp
 {
-    public class HorizontalLine : Figure
+    public class VerticalLines : Figure
     {
-        public HorizontalLine(int xLeft, int xRight, int y, char sym)
+        public VerticalLines(int yUp, int yDown, int x, char sym)
         {
             pList = new List<Point>();
-            for (int x = xLeft; x <= xRight; x++)
+            for (int y = yUp; y <= yDown; y++)
             {
                 Point p = new Point(x, y, sym);
                 pList.Add(p);
