@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography.X509Certificates;
 
 namespace ConsoleApp
 {
@@ -10,7 +8,7 @@ namespace ConsoleApp
         public int y;
         public char sym;
 
-        public Point(){}
+        public Point() { }
 
         public Point(int _x, int _y, char _sym)
         {
