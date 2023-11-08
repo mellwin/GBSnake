@@ -32,7 +32,7 @@ namespace ConsoleApp
 
             if (direction == Direction.LEFT) x -= offset;
 
-            if (direction == Direction.UP) y += offset;
+            if (direction == Direction.UP) y -= offset;
 
             if (direction == Direction.DOWN) y += offset;
         }
