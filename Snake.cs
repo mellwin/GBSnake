@@ -31,6 +31,18 @@ namespace ConsoleApp
             tail.Clear();
             head.Draw();
         }
+        internal bool Eat(Point food)
+        {
+            Point head = GetNextPoint();
+            if (head.IsHit(food))
+            {
+                food.sym = head.sym;
+                pList.Add(food);
+                return true;
+            }
+            else
+                return false;
+        }
 
         public void HanleKey(ConsoleKey key)
         {
@@ -47,5 +59,6 @@ namespace ConsoleApp
             nextPoint.Move(1, direction);
             return nextPoint;
         }
+
     }
 }
